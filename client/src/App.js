@@ -1,7 +1,9 @@
+import Homepage from './Pages/Homepage/Homepage';
+
 function App() {
   return (
     <>
-      <div>This is a test production upload for heroku</div>
+      <Homepage />
     </>
   );
 }
