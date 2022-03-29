@@ -1,5 +1,5 @@
 {
-  "name": "heroku-app",
+  "name": "react-portfolio-cj-v1",
   "version": "0.1.0",
   "private": true,
   "proxy": "http://localhost:3001",

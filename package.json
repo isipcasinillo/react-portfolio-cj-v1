@@ -1,9 +1,9 @@
 {
-  "name": "heroku-app",
+  "name": "react-portfolio-cj-v1",
   "version": "1.0.0",
   "description": "",
   "main": "server/server.js",
-  "homepage": "https://isipcasinillo.github.io/heroku-app",
+  "homepage": "https://isipcasinillo.github.io/react-portfolio-cj-v1",
   "engines": {
     "node": "16.4.2"
   },
@@ -16,7 +16,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/isipcasinillo/heroku-app.git"
+    "url": "git+https://github.com/isipcasinillo/react-portfolio-cj-v1.git"
   },
   "keywords": [],
   "author": "",
