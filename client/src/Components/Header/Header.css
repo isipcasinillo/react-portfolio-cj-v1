@@ -1,15 +1,22 @@
+body {
+  background-color: #95a193;
+}
+
 ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
-a, a:hover, a:focus, a:active {
+a,
+a:hover,
+a:focus,
+a:active {
   text-decoration: none;
   color: inherit;
 }
 
 nav {
-  background-color: rgb(241, 241, 241);
+  background-color: rgb(255, 255, 255);
 }
 
 .nav-ul {
@@ -19,49 +26,73 @@ nav {
   align-self: center;
 }
 
-
-.FaBars:active{
+.IoMenu:active {
   background-color: red;
 }
 
-.FaBars { 
+.IoMenu {
+  display: none;
+  align-self: center;
+  width: 40px;
+}
+
+.IoClose {
   display: none;
   align-self: center;
 }
 
-
-
 /**  UTILITIES **/
 .navlist {
+  height: 80px;
   padding: 0px 50px;
   display: flex;
-  flex-direction: row-reverse;
+  flex-direction: row;
+  align-items: center;
   justify-content: space-between;
 }
-.navItem-li {
-  padding: 5px 25px;
-  font-family: 'Roboto', sans-serif;
 
+/* Navlists items in Navbar*/
+.navItem-li {
+  color: #525252;
+  margin: 5px 25px;
+  font-size: 20px;
+  font-weight: 400;
+  transition-duration: 1000ms;
+  transition: ease-out 0.3s;
 }
-.nav-dropdown {
+.navItem-li:hover {
+  margin-top: 1px;
+  color: rgb(112, 112, 112);
+}
+
+.navItem-li a {
+  font-size: 30px;
+  font-family: 'Roboto', sans-serif;
+}
+#nav-dropdown {
+  background-color: rgb(221, 221, 221);
   display: flex;
   justify-content: center;
+  transition: ease-out 200ms;
 }
-.hidden {
-  display: none;
+#nav-dropdown.hidden {
+  opacity: 0;
 }
+
 @media only screen and (max-width: 700px) {
-  .FaBars {
+  .IoMenu {
+    display: block;
+  }
+  .IoClose {
     display: block;
   }
   .nav-ul {
     display: none;
   }
-
 }
 
 @media only screen and (min-width: 700px) {
-  .nav-dropdown {
+  #nav-dropdown {
     display: none;
   }
 }

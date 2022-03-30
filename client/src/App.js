@@ -1,11 +1,11 @@
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Header from './Components/Header/Header';
-import Homepage from './Pages/Homepage/Homepage'
-import About from './Pages/About/About'
-import Skills from './Pages/Skills/Skills'
-import Projects from './Pages/Projects/Projects'
-import Contact from './Pages/Contact/Contact'
-import Resume from './Pages/Resume/Resume'
+import Homepage from './Pages/Homepage/Homepage';
+import About from './Pages/About/About';
+import Skills from './Pages/Skills/Skills';
+import Projects from './Pages/Projects/Projects';
+import Contact from './Pages/Contact/Contact';
+import Resume from './Pages/Resume/Resume';
 function App() {
   return (
     <>
