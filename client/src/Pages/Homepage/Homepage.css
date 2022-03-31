@@ -1,0 +1,77 @@
+.homepage-container {
+  display: flex;
+  flex-direction: column;
+  margin: 25px;
+  margin-top: 100px;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.hp-title {
+  font-weight: 500;
+  font-size: 50px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  line-height: 1;
+  text-align: center;
+}
+
+.hp-paragraph {
+  padding-top: 30px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.btn-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.btn {
+  position: relative;
+  height: 60px;
+  width: 320px;
+  border-radius: 10px;
+  margin-top: 10px;
+  transition: transform 0.2s;
+  outline: none;
+  border-style: none;
+}
+
+.prev-btn {
+  background-color: rgb(73, 99, 246);
+  color: white;
+}
+.msg-btn {
+  background-color: rgb(255, 255, 255);
+}
+.prev-btn:focus,
+.msg-btn:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.msg-btn:hover,
+.prev-btn:hover {
+  cursor: pointer;
+  transform: scale(1.04);
+}
+
+@media only screen and (min-width: 1000px) {
+  .homepage-container {
+    margin-top: 150px;
+  }
+  .btn-container {
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 800px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .btn-container {
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 800px;
+  }
+}

@@ -1,5 +1,9 @@
+* {
+  padding: 0;
+  margin: 0;
+}
 body {
-  background-color: #95a193;
+  background-color: #f0f0f0;
 }
 
 ul {
@@ -12,11 +16,11 @@ a:hover,
 a:focus,
 a:active {
   text-decoration: none;
-  color: inherit;
+  color: white;
 }
 
 nav {
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(54, 54, 54);
 }
 
 .nav-ul {
@@ -24,6 +28,9 @@ nav {
 }
 .nav-logo {
   align-self: center;
+  color: white;
+  padding: 5px;
+  font-size: 22px;
 }
 
 .IoMenu:active {
@@ -34,49 +41,70 @@ nav {
   display: none;
   align-self: center;
   width: 40px;
+  color: white;
 }
 
 .IoClose {
   display: none;
   align-self: center;
+  color: white;
 }
 
 /**  UTILITIES **/
 .navlist {
-  height: 80px;
-  padding: 0px 50px;
+  height: 60px;
   display: flex;
   flex-direction: row;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
 }
 
+.navlist * {
+  margin: 10px;
+}
 /* Navlists items in Navbar*/
 .navItem-li {
-  color: #525252;
+  color: #bebebe;
   margin: 5px 25px;
   font-size: 20px;
   font-weight: 400;
-  transition-duration: 1000ms;
+  transition-duration: 200ms;
   transition: ease-out 0.3s;
 }
 .navItem-li:hover {
   margin-top: 1px;
-  color: rgb(112, 112, 112);
+  color: rgb(255, 255, 255);
 }
 
-.navItem-li a {
-  font-size: 30px;
-  font-family: 'Roboto', sans-serif;
-}
 #nav-dropdown {
-  background-color: rgb(221, 221, 221);
-  display: flex;
-  justify-content: center;
-  transition: ease-out 200ms;
+  width: 100%;
+  background-color: rgb(37, 37, 37);
+  position: absolute;
+  z-index: 2;
+  transition: all 200ms ease-in-out;
 }
 #nav-dropdown.hidden {
   opacity: 0;
+  visibility: hidden;
+}
+.nav-dropdown-ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #585858;
+  font-size: 20px;
+  font-weight: 400;
+}
+.nav-dropdown-li {
+  display: flex;
+  align-items: center;
+  height: 50px;
+  color: rgb(197, 197, 197);
+}
+
+.nav-dropdown-ul:hover {
+  margin-top: 1px;
+  color: rgb(255, 255, 255);
 }
 
 @media only screen and (max-width: 700px) {
